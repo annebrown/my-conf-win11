@@ -10,11 +10,13 @@
 
 [Scripts](#scripts)   
 
-       [Start RDP Xfce4-session in Remote Desktop](#start-rdp-xfce4-session-in-remote-desktop)   
+      [Invoke Saved Ubuntu 20.04 Img](invoke-saved-ubuntu-20-04-img)
 
-       [Start KDE Plasma Desktop](#start-kde-plasma-desktop)
+      [Start RDP Xfce4-session in Remote Desktop](#start-rdp-xfce4-session-in-remote-desktop)   
 
-       [Launch xfce4-terminal](#launch-xfce4-terminal)
+      [Start KDE Plasma Desktop](#start-kde-plasma-desktop)
+
+      [Launch xfce4-terminal](#launch-xfce4-terminal)
 
 [PowerShell](#PowerShell)       
 
@@ -52,6 +54,12 @@ prep_startup_scripts
 
 # Scripts
 
+## Invoke Saved Ubuntu 20.04 Img
+
+```powershell
+PS> Start-Ubuntu-10.04-plasma-desktop.bat
+```
+
 ## Start RDP Xfce4-session in Remote Desktop
 
 1. Clone Repo: [git@github.com:annebrown/my-conf-win11.git](https://github.com/annebrown/bash-conf.git) to $MY_WIN__REPOS/my-conf-win11  
@@ -86,6 +94,12 @@ $MY_WIN_REPOS/my-conf-win11/wsl2/plasma-desktop.bat
 
 ```batch
 PS> $MY_WIN_REPOS\my-conf-win11\wsl2\xterm.bat
+```
+
+### Invoke Saved Ubuntu 20.04 Img
+
+```powershell
+PS> Start-Ubuntu-10.04-plasma-desktop.bat
 ```
 
 # PowerShell
