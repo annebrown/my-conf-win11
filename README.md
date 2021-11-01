@@ -1,6 +1,6 @@
 # Configure Win11
 
-https://github.com/annebrown/?tab=repositories > [my-conf-win11](../README.md) > README.md
+[My Repos](https://github.com/annebrown/?tab=repositories) > [my-conf-win11](../README.md) > README.md
 
 # Table of Contents
 
@@ -16,11 +16,11 @@ https://github.com/annebrown/?tab=repositories > [my-conf-win11](../README.md) >
 
 # Description
 
-Configures my Windows 11 dev envs.    Includes app profiles, startup scripts, scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
+Configures my Windows 11 dev env on a fresh OS.    Includes app profiles, startup scripts, scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
 
 ## WSL2
 
-For linux config, see 
+See: [my-conf](https://github.com/annebrown/my-conf-win11) for all other OSs.
 
 #### Start RDP Xfce4-session in Remote Desktop
 
@@ -43,7 +43,7 @@ $ $MY_REPOS/my-conf/win11/wsl/desktop.sh
 2. Launch Windows Remote Desktop RDP profile:
 
 ```bat
-PS> \\wsl$\Ubuntu-20.04\$MY_WIN_REPOS\my-conf\win11\rdp\start-rdp-desktop.rdp
+PS> \\wsl$\Ubuntu-20.04\$MY_WIN_REPOS\my-conf-win11\rdp\start-rdp-desktop.rdp
 ```
 
 ### Start KDE Plasma Desktop
@@ -55,17 +55,9 @@ $MY_WIN_REPOS/my-conf-win11/wsl2/plasma-desktop.bat
 ### Launch xfce4-terminal
 
 ```batch
-> $MY_WIN_REPOS\my-conf\win11\wsl2\xterm.bat
-```
-
-or
-
-alias in .bash_aliases:_
-
-```bash
-$ xterm
+PS> $MY_WIN_REPOS\my-conf-win11\wsl2\xterm.bat
 ```
 
 # PowerShell
 
-[To Do: Copy conf from old repo and document here.]
+[To Do: Copy old docs here.]
