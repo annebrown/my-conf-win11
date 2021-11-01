@@ -20,7 +20,7 @@ Configures my Windows 11 dev env on a fresh OS.    Includes app profiles, startu
 
 ## WSL2
 
-See: [my-conf](https://github.com/annebrown/my-conf-win11) for all other OSs.
+See: [my-conf](https://github.com/annebrown/my-conf) for all other OSs.
 
 #### Start RDP Xfce4-session in Remote Desktop
 
