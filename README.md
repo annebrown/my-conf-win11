@@ -4,13 +4,17 @@
 
 # Table of Contents
 
-[Description](#description)        
+[Description](#description)
 
-[WSL2](#wsl2)      
+[Usage](#usage) 
 
-       [Start Xfce4-session in Remote Desktop (RDP)](#start-rdp-xfce4-session-in-remote-desktop)     
+[Scripts](#scripts)   
 
-        [Launch xfce4-terminal](#launch-xfce4-terminal)       
+       [Start RDP Xfce4-session in Remote Desktop](#start-rdp-xfce4-session-in-remote-desktop)   
+
+       [Start KDE Plasma Desktop](#start-kde-plasma-desktop)
+
+       [Launch xfce4-terminal](#launch-xfce4-terminal)
 
 [PowerShell](#PowerShell)       
 
@@ -18,11 +22,37 @@
 
 Configures my Windows 11 dev env on a fresh OS.    Includes app profiles, startup scripts, scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
 
-## WSL2
-
 See: [my-conf](https://github.com/annebrown/my-conf) for all other OSs.
 
-#### Start RDP Xfce4-session in Remote Desktop
+# Usage
+
+1. Clone Repo: [git@github.com:annebrown/my-conf-win11.git](https://github.com/annebrown/bash-conf.git) to $MY_WIN__REPOS/my-conf-win11
+
+2. Link files:
+
+```bash
+[~] $ ln -s $MY_REPOS/my-conf/bash/bash_aliases .bash_aliases     
+```
+
+See Also : $MY_REPOS/my-conf/vim/README.md
+
+```bash
+[~] $ ln -s $MY_REPOS/my-conf/vim .vim
+[~] $ ln -s $MY_REPOS/my-conf/vimrc .vimrc
+[~] $ ln -s $MY_REPOS/my-conf/vrapperrc .vrapperrc
+```
+
+2. Prepare service and app startup scripts.  Run:
+   
+   [To Do: Finish editing scripts and push to dynamic branch.]
+
+```bash
+prep_startup_scripts   
+```
+
+# Scripts
+
+## Start RDP Xfce4-session in Remote Desktop
 
 1. Clone Repo: [git@github.com:annebrown/my-conf-win11.git](https://github.com/annebrown/bash-conf.git) to $MY_WIN__REPOS/my-conf-win11  
 
@@ -46,13 +76,13 @@ $ $MY_REPOS/my-conf/win11/wsl/desktop.sh
 PS> \\wsl$\Ubuntu-20.04\$MY_WIN_REPOS\my-conf-win11\rdp\start-rdp-desktop.rdp
 ```
 
-### Start KDE Plasma Desktop
+## Start KDE Plasma Desktop
 
 ```powershell
 $MY_WIN_REPOS/my-conf-win11/wsl2/plasma-desktop.bat
 ```
 
-### Launch xfce4-terminal
+## Launch xfce4-terminal
 
 ```batch
 PS> $MY_WIN_REPOS\my-conf-win11\wsl2\xterm.bat
