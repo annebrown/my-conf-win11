@@ -8,7 +8,7 @@
 
 [Usage](#usage) 
 
-[Scripts](#scripts)   
+[Tasks](#tasks)   
 
       [Invoke Saved Ubuntu 20.04 Img](invoke-saved-ubuntu-20-04-img)
 
@@ -22,86 +22,50 @@
 
 # Description
 
-Configures my Windows 11 dev env on a fresh OS.    Includes app profiles, startup scripts, scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
+Configures my Windows 11 dev env on a fresh OS.    Includes scripts and app conf, including Visual Studio, VSCode, AndroidStudio and PowerShell.  
 
 See: [my-conf](https://github.com/annebrown/my-conf) for all other OSs.
 
 # Usage
 
-1. Clone Repo: [git@github.com:annebrown/my-conf-win11.git](https://github.com/annebrown/bash-conf.git) to $MY_WIN__REPOS/my-conf-win11
+Clone Repo: [git@github.com:annebrown/my-conf-win11.git](https://github.com/annebrown/bash-conf.git) to $MY_WIN__REPOS/my-conf-win11
 
-2. Link files:
+Assumes WSL2 has been configured on the host (See: )
 
-```bash
-[~] $ ln -s $MY_REPOS/my-conf/bash/bash_aliases .bash_aliases     
-```
-
-See Also : $MY_REPOS/my-conf/vim/README.md
-
-```bash
-[~] $ ln -s $MY_REPOS/my-conf/vim .vim
-[~] $ ln -s $MY_REPOS/my-conf/vimrc .vimrc
-[~] $ ln -s $MY_REPOS/my-conf/vrapperrc .vrapperrc
-```
-
-2. Prepare service and app startup scripts.  Run:
-   
-   [To Do: Finish editing scripts and push to dynamic branch.]
-
-```bash
-prep_startup_scripts   
-```
-
-# Scripts
+# Tasks
 
 ## Invoke Saved Ubuntu 20.04 Img
 
 ```powershell
-PS> Start-Ubuntu-10.04-plasma-desktop.bat
+PS> $MY_WIN_REPOS/my-conf-win11/bat/Start-Ubuntu-10.04-plasma-desktop.bat
 ```
 
 ## Start RDP Xfce4-session in Remote Desktop
 
-1. Clone Repo: [git@github.com:annebrown/my-conf-win11.git](https://github.com/annebrown/bash-conf.git) to $MY_WIN__REPOS/my-conf-win11  
-
-2. Start xfce4-session and start rdp service:
-   
-   Either use bash alias (configured in [bash](../bash/README.md)):
+1. Start xfce4-session and start rdp service in wsl:
 
 ```bash
-$ desktop
-```
-
-or directly:
-
-```bash
-$ $MY_REPOS/my-conf/win11/wsl/desktop.sh   
+$ $MY_WIN_REPOS/my-conf-win11/sh/desktop.sh   
 ```
 
 2. Launch Windows Remote Desktop RDP profile:
 
 ```bat
-PS> \\wsl$\Ubuntu-20.04\$MY_WIN_REPOS\my-conf-win11\rdp\start-rdp-desktop.rdp
+PS> $MY_WIN_REPOS\my-conf-win11\rdp\start-rdp-desktop.rdp
 ```
 
 ## Start KDE Plasma Desktop
 
 ```powershell
-$MY_WIN_REPOS/my-conf-win11/wsl2/plasma-desktop.bat
+PS> $MY_WIN_REPOS/my-conf-win11/bat/plasma-desktop.bat
 ```
 
 ## Launch xfce4-terminal
 
 ```batch
-PS> $MY_WIN_REPOS\my-conf-win11\wsl2\xterm.bat
-```
-
-### Invoke Saved Ubuntu 20.04 Img
-
-```powershell
-PS> Start-Ubuntu-10.04-plasma-desktop.bat
+PS> $MY_WIN_REPOS\my-conf-win11\bat\xterm.bat
 ```
 
 # PowerShell
 
-[To Do: Copy old docs here.]
+[To Do: Copy old docs here.].
